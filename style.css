@@ -1,0 +1,180 @@
+body {
+  background: #020024;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(20, 20, 141) 35%,
+    rgb(0, 55, 66) 100%
+  );
+  min-height: 100vh;
+  margin: 0;
+  font-family: "AlexAwesomeCustomMadeFontTM";
+}
+
+@font-face {
+  font-family: "AlexAwesomeCustomMadeFontTM";
+  src: url("fonts/Custom-MADE-font-by-Alex-smajl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero-immage {
+  width: 100%;
+  height: auto;
+}
+
+.poster {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+.poster-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  background-color: rgb(23, 3, 62);
+}
+
+.poster-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+}
+
+.poster-row a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.poster-row a:hover {
+  text-decoration: none;
+  color: white;
+  transform: scale(1.05);
+}
+
+.platform-icon {
+  width: 25%;
+  height: 25%;
+  margin-top: 10px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.poster-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "AlexAwesomeCustomMadeFontTM";
+}
+
+.menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menubar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.menubar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.game-section-title {
+  text-align: center;
+  color: white;
+  font-size: 66px;
+  margin-top: 100px;
+  font-family: "AlexAwesomeCustomMadeFontTM";
+}
+
+.about-section-title {
+  text-align: center;
+  color: white;
+  font-size: 66px;
+  margin-top: 180px;
+  margin-bottom: 40px;
+  font-family: "AlexAwesomeCustomMadeFontTM";
+}
+
+#about {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.about-text {
+  color: white;
+  flex: 1;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Responsive - stack on mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
